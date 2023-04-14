@@ -1,0 +1,23 @@
+{
+  "name": "swiper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slobodianiuk1/superpeer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Slobodianiuk1/superpeer/issues"
+  },
+  "homepage": "https://github.com/Slobodianiuk1/superpeer#readme",
+  "description": ""
+}

@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    * {
+        @apply font-roboto
+    }
+}
+
+@layer components {
+    .btn {
+        @apply uppercase text-black text-center leading-5 text-base bg-superpeer-golden rounded-lg px-[2.131rem] py-[0.9375rem]
+        hover:bg-superpeer-hoverGolden transition-bg xs:w-full xs:text-sm xs:py-[0.8rem]
+    }
+
+    .btn-header {
+        @apply h-[2.5rem] text-black px-[1.937rem]  border border-superpeer-dark rounded-lg leading-5
+        text-center -translate-y-[0.64rem] -translate-x-[6.625rem] lg:translate-x-0 lg:translate-y-0 xs:px-4 hover:bg-superpeer-golden
+        hover:border-superpeer-golden  transition-[all] ease-out
+    }
+
+    .container-section {
+        @apply mx-auto max-w-[1090px] px-8 sm:px-4
+    }
+
+    .h3-title {
+        @apply text-3.5 md:text-5xl sm:text-4xl xs:text-3xl text-center text-superpeer-dark
+    }
+
+    .subtitle {
+        @apply text-center text-superpeer-gray leading-7 text-xl md:text-base  sm:text-sm
+    }
+
+    .h4-title {
+        @apply text-[1.375rem] sm:text-[1.1rem]  leading-h4 text-superpeer-dark
+    }
+
+    .description {
+        @apply text-superpeer-gray text-[1.125rem] sm:text-[0.9rem]  leading-[1.5625rem] as:leading-[1.1rem]
+    }
+
+    .pricing .swiper {
+        @apply flex w-full max-w-[46.1875rem] h-auto pr-[0.25rem]  pb-[0.25rem] mr-[-2px]
+    }
+
+    .swiper-slide {
+        @apply w-[21.75rem] min-h-[13.375rem] h-auto bg-superpeer-dark rounded-[1.875rem] shadow-price-bg flex-grow flex justify-center items-center flex-col p-5
+    }
+
+    .price-title {
+        @apply text-center text-white text-[1.1875rem]  font-normal leading-none mb-[0.75rem]
+    }
+
+    .price-percent {
+        @apply text-[3.125rem] text-white leading-none mb-[1.875rem] sm:text-[2.5rem]
+    }
+
+    .price-percent__discount {
+       @apply text-superpeer-middleGray mr-[0.9375rem] ml-[-0.5rem] relative
+    }
+
+    .price-percent__discount:after {
+        @apply content-[''] absolute bg-superpeer-middleGray h-[2.5px] w-full left-0 bottom-[1.375rem]
+    }
+
+    .price-subtitle {
+        @apply text-superpeer-lightedGray text-[1rem] leading-none sm:text-[0.875rem]
+    }
+
+    .btn-next, .btn-prev {
+        @apply w-[3.125rem] h-[3.125rem] bg-superpeer-golden rounded-full absolute flex justify-center items-center top-1/2 cursor-pointer translate-y-[-84%] sm:hidden
+    }
+
+    .btn-next {
+        @apply right-[-0.375rem]
+    }
+
+    .btn-prev {
+        @apply left-[-0.5rem]
+    }
+
+    .pricing .pagination {
+        @apply text-center mt-[1rem]
+    }
+
+    .pricing .pagination:first-child {
+        @apply mr-[0.625rem]
+    }
+
+    .pricing .pagination > .swiper-pagination-bullet-active + .swiper-pagination-bullet {
+        @apply opacity-50
+    }
+
+    .pricing .pagination .swiper-pagination-bullet {
+        @apply bg-superpeer-golden opacity-30 w-[0.625rem] h-[0.625rem] ml-0 mr-[0.3125rem]
+    }
+
+    .pricing .pagination .swiper-pagination-bullet:first-child {
+        @apply ml-[0.3125rem]
+    }
+
+    .pricing .pagination .swiper-pagination-bullet-active {
+        @apply opacity-100
+    }
+    .hoverLink:hover {
+        @apply text-superpeer-golden fill-superpeer-golden
+    }
+}
